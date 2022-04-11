@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Pacifico&family=Raleway&family=Titillium+Web&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Pacifico&family=Raleway&family=Titillium+Web&display=swap");
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
     background-color: #e7e7e7;
@@ -28,7 +28,7 @@ body {
 }
 
 .card-container .card-back p {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
@@ -116,12 +116,20 @@ body {
     box-shadow: 0 0 30px #cfd8dc;
 }
 
-
+.card-up::after {
+    content: " ";
+    position: absolute;
+    top: 65%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #1e1f26, #0000);
+}
 
 .card-container .card-up .card-add {
     border-radius: 50%;
     background-color: #ed145b;
-    box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.43);
     top: 320px;
     left: 0;
     right: 0;
@@ -131,7 +139,7 @@ body {
     margin: auto;
     cursor: pointer;
     transition: 0.5s ease-in-out;
-
+    z-index: 100;
 }
 
 .pCcard-on .card-up .card-add {
@@ -166,27 +174,27 @@ body {
 }
 
 .card-container .card-back a:nth-of-type(1) i {
-    color:#000000;
+    color: #000000;
     border: 2px solid #130e0e;
 }
 .card-container .card-back a:nth-of-type(2) i {
-    color:#06183a;
+    color: #06183a;
     border: 2px solid #06183a;
 }
 .card-container .card-back a:nth-of-type(3) i {
-    color:#e6001e;
+    color: #e6001e;
     border: 2px solid #e6001e;
 }
 .card-container .card-back a:nth-of-type(4) i {
-    color:#3b5998;
+    color: #3b5998;
     border: 2px solid #3b5998;
 }
 .card-container .card-back a:nth-of-type(5) i {
-    color:#3b5998;
+    color: #3b5998;
     border: 2px solid #3b5998;
 }
 .card-container .card-back a:nth-of-type(6) i {
-    color:#3b5998;
+    color: #3b5998;
     border: 2px solid #3b5998;
 }
 
@@ -196,18 +204,16 @@ body {
     line-height: 60px;
 }
 
-
 h1 {
     color: #e7e7e7;
-    font-family: 'Grape Nuts', cursive;
+    font-family: "Grape Nuts", cursive;
     font-size: 45px;
     font-weight: 400;
     margin: 25px 20px 0 20px;
-    
 }
 
 .text {
-    font-family: 'Pacifico', cursive;
+    font-family: "Pacifico", cursive;
     margin: 5px 20px 0 20px;
 }
 
@@ -221,12 +227,11 @@ h2 {
     font-size: 20px;
     font-weight: 400;
     margin: 5px 20px 0 20px;
-
 }
 
 .text-description {
     color: #9b9b9b;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.1;
@@ -241,12 +246,11 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin: 12px 20px 0 20px;
-    
 }
 
 h3 {
     color: #ef4141;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
